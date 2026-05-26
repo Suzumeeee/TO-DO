@@ -87,12 +87,7 @@ body{
     background-color: transparent;
     color: #3C231E;
     border: none;
-
-    opacity: 0;
     cursor: pointer;
-}
-.to-do-item:hover .delete-btn{
-    opacity: 1;
 }
 
 .to-do-item:hover{
