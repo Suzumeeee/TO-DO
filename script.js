@@ -34,7 +34,8 @@ function addTodo()
     list.innerHTML = "";
 
     todos.forEach((todo) => {
-      const li = document.createElement("li");
+      const li = document.createElement("p");
+      li.classList.add("to-do-item");
 
     if(todo.done){ 
       li.classList.add("done");
@@ -46,6 +47,7 @@ function addTodo()
 
    const btn = document.createElement("button");
    btn.textContent = "X"
+   btn.classList.add("delete-btn");
    btn.addEventListener("click", function(){
      todos = todos.filter((t) => t.id !== todo.id);
     render();

@@ -1,4 +1,100 @@
+:root{
+    --front: #A57F76;
+    --bkg: #3C231E;
+}
+
+body{
+    background-color: var(--bkg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    margin-top: 10%;
+    background-color: var(--front);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
 .done{
     text-decoration: line-through;
     opacity: 0.5;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-task{
+    padding: 10px;
+    background-color: var(--bkg);
+    color: whitesmoke;
+    flex: 1;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid transparent;
+}
+.input-task:focus{
+    border-color: var(--front);
+}
+
+
+.add-btn{
+    padding: 10px 20px;
+    background-color: var(--bkg);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover{
+    background-color: #835d57;
+}
+
+.to-do-list{
+    padding-right: 8px;
+    padding-bottom: 60px;
+}
+
+.to-do-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 12px 8px;
+}
+
+.delete-btn{
+    background-color: transparent;
+    color: #3C231E;
+    border: none;
+
+    opacity: 0;
+    cursor: pointer;
+}
+.to-do-item:hover .delete-btn{
+    opacity: 1;
+}
+
+.to-do-item:hover{
+    background-color: #835d57;
 }
